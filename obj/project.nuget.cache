@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "t/lJkPp5hCCgOJ0lqCCy/XnTvRvOmyy/mVY5MEeoJhwd9hkGkqh+/wqbKgiWtb4kzwqWhjV0mt5xqD7KCMS3sA==",
+  "success": true,
+  "projectFilePath": "/Users/andreiaacs/Desktop/desafio-lambda/CopaFilmesWebApi/CopaFilmesWebApi.csproj",
+  "expectedPackageFiles": [
+    "/Users/andreiaacs/.nuget/packages/encriptacao/9.1.0/encriptacao.9.1.0.nupkg.sha512",
+    "/Users/andreiaacs/.nuget/packages/jsonconverter/1.0.1/jsonconverter.1.0.1.nupkg.sha512",
+    "/Users/andreiaacs/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/andreiaacs/.nuget/packages/restsharp/106.11.7/restsharp.106.11.7.nupkg.sha512",
+    "/Users/andreiaacs/.nuget/packages/system.security.cryptography.cng/4.5.0/system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "/Users/andreiaacs/.nuget/packages/system.security.cryptography.protecteddata/4.5.0/system.security.cryptography.protecteddata.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
