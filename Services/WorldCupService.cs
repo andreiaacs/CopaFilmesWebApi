@@ -29,6 +29,16 @@ namespace CopaFilmesWebApi.Services
 
         public Champions Play(List<Movie> movies)
         {
+
+            var quarterFinalResult = this.QuarterFinal(movies);
+            var semiFinalResult = this.SemiFinal(quarterFinalResult);
+            var finalResult = this.Final(semiFinalResult);
+
+            return finalResult;
+        }
+
+        public List<Movie> QuarterFinal(List<Movie> movies)
+        {
             var j = movies.Count - 1;
             var semiFinal = new List<Movie>();
             var i = 0;
@@ -56,23 +66,26 @@ namespace CopaFilmesWebApi.Services
                     j--;
                 }
             }
+            return semiFinal;
+        }
 
-
-            var k = semiFinal.Count - 1;
+        public List<Movie> SemiFinal(List<Movie> semiFinal)
+        {
+            var k = 1;
             var final = new List<Movie>();
             var l = 0;
-            while (l < k)
+            while (k < semiFinal.Count)
             {
                 if (semiFinal[l].Nota > semiFinal[k].Nota)
                 {
                     final.Add(semiFinal[l]);
-                    k--;
+                    k++;
                     l++;
                 }
                 if (semiFinal[k].Nota > semiFinal[l].Nota)
                 {
                     final.Add(semiFinal[k]);
-                    k--;
+                    k++;
                     l++;
                 }
                 // Caso dois filmes tenham a mesma nota, o vencedor será definido pela ordem alfabética. 
@@ -81,12 +94,17 @@ namespace CopaFilmesWebApi.Services
                 if (semiFinal[l].Nota == semiFinal[k].Nota)
                 {
                     final.Add(semiFinal[l]); // Como desempate é por ordem alfabetica e a lista ta ordenada
-                    k--;
+                    k++;
                     l++;
                 }
             }
+            return final;
+        }
 
+        public Champions Final(List<Movie> final)
+        {
             var champions = new Champions();
+
             if (final[0].Nota > final[1].Nota)
             {
                 champions.First = final[0];
@@ -103,8 +121,7 @@ namespace CopaFilmesWebApi.Services
                 var ordemAlfabetica = this.OrdenarFilmes(final);
                 champions.First = ordemAlfabetica[0];
                 champions.Second = ordemAlfabetica[1];
-            } 
-
+            }
             return champions;
         }
 

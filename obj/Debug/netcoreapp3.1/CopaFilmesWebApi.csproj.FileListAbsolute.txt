@@ -24,3 +24,4 @@
 /Users/andreiaacs/Desktop/desafio-lambda/CopaFilmesWebApi/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
 /Users/andreiaacs/Desktop/desafio-lambda/CopaFilmesWebApi/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
 /Users/andreiaacs/Desktop/desafio-lambda/CopaFilmesWebApi/obj/Debug/netcoreapp3.1/CopaFilmesWebApi.csproj.CopyComplete
+/Users/andreiaacs/Desktop/desafio-lambda/CopaFilmesWebApi/bin/Debug/netcoreapp3.1/Mocks/entrada-teste.json
