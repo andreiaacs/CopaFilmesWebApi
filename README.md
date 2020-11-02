@@ -23,7 +23,7 @@ Após clonar o projeto, entrar na pasta do mesmo pelo CMD e executar os seguinte
 
 Abrir o postman e fazer as seguintes requisicões:
 
-* Para buscar a lista com todos os filmes, fazer uma requisição GET para o link: https://copafilmesapi.azurewebsites.net/api/Movies
+* Para buscar a lista com todos os filmes, fazer uma requisição GET para o link: https://localhost:5001/api/Movies
 * Para iniciar um campeonato enviar um POST com 8 dos filmes retornados no passo anterior para o mesmo link.
 
 
