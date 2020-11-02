@@ -1,12 +1,10 @@
 # Copa Filmes Web API
 
-API para campeonato de filems de acordo com 8 filmes selecionados e suas respectivas notas para ser consumida por aplicações web e mobile.
+API para campeonato de filmes de acordo com 8 filmes selecionados e suas respectivas notas para ser consumida por aplicações web e mobile.
 
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
-
-Consulte **Implantação** para saber como implantar o projeto.
 
 ### 📋 Pré-requisitos
 
